@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu đăng kí ứng tuyển</title>
+
+ <style>
+    table {
+      border: 2px solid #032908;
+      border-collapse: separate;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 450px;
+      background-color: rgb(139, 194, 142);
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 20px;
+    }
+    fieldset {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    .form-group {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    legend {
+      font-size: 12px;
+      font-weight: bold;
+      padding: 0 5px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 11px;
+      margin-bottom: 2px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"] {
+      display: block;
+      width: 100%;
+      height: 28px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 7px;
+    }
+
+    textarea {
+      display: block;
+      width: 100%;
+      height: 75px;
+      box-sizing: border-box;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 7px;
+      resize: vertical;
+    }  
+   
+    input[type="file"] {
+      font-size: 12px;
+    }
+    .submit-btn {
+      width: 100%;
+      height: 30px;
+      background-color: #197428;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      font-size: 11px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+</style>
+</head>
+<body>
+    <table >
+     <!-- separate/ collaapse-->
+        <tr> 
+            <th>
+                <h3>Job Application: Front-End Developer</h3>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <fieldset>
+                <legend >Personal Information</legend>
+                <form action="/action_page.php" method="get" >
+
+                <div class="form-group">
+                 <label>Full Name</label>
+                 <input type="text" id="name" name="name">
+                </div>
+
+                <div class="form-group">
+                  <label >Email Address</label>
+                  <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                  <label>Phone</label>
+                  <input type="text" id="phone" name="phone">
+                </div>
+                </form>
+                </fieldset>
+            </th> 
+        </tr>
+        
+        <tr>
+            <th>
+                <fieldset>
+                <legend >Application</legend>
+                <form action="/action_page.php" method="get" >
+
+                <div class="form-group">
+                 <label>Cover Letter</label>
+                 <textarea type="text" placeholder="Why are you a great fit for this role"></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="resume">Upload Resume/CV</label>
+                  <input type="file" id="resume" name="resume">
+                </div>
+                <div>
+
+                </div>
+                </form>
+                </fieldset>
+            </th> 
+        </tr>
+        <tr>
+          <th>
+            <button type="submit" class="submit-btn"> Submit Application</button>
+          </th>  
+        </tr>
+    
+</body>
+</html>
